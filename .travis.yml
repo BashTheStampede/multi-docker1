@@ -18,3 +18,4 @@ after_success:
   - docker push bashthestampede/multi-nginx
   - docker push bashthestampede/multi-server
   - docker push bashthestampede/multi-worker
+
