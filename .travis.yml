@@ -5,7 +5,6 @@ services:
  before_install:
    - docker build -t imagetest -f ./client/Dockerfile.dev ./client
 
-
 script:
   - docker run imagetest npm test -- --coverage
 
@@ -19,4 +18,3 @@ after_success:
   - docker push bashthestampede/multi-nginx
   - docker push bashthestampede/multi-server
   - docker push bashthestampede/multi-worker
-  
